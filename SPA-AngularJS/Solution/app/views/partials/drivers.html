@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="text-center">
+        Drivers
+    </h1>
+    <br/>
+    <ng-include src="driversFilters" ng-if="isAuth" class="text-center"></ng-include>
+    <br/>
+    <ng-include src="publicDrivers" ng-hide="resultCount==0" class="text-center"></ng-include>
+    <div class="jumbotron text-center" ng-show="resultCount==0">
+        <h2 >No results</h2></h2>
+    </div>
+</div>

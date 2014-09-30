@@ -1,0 +1,16 @@
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\TripExchange.Data.dll.config
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\TripExchange.Data.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\TripExchange.Data.pdb
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\EntityFramework.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\TripExchange.Models.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\TripExchange.Models.pdb
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\EntityFramework.xml
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\obj\Debug\TripExchange.Data.csprojResolveAssemblyReference.cache
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\obj\Debug\TripExchange.Data.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Data\obj\Debug\TripExchange.Data.pdb

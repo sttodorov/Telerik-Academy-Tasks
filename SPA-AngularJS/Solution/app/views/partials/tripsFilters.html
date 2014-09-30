@@ -1,0 +1,51 @@
+
+    <button class="btn btn-success " ng-click="CreateTrip()">Create trip</button>
+
+    <div class="row text-center">
+        <span class="col-lg-3">Sort</span>
+        <span class="col-lg-3">Order</span>
+        <span class="col-lg-3">From</span>
+        <span class="col-lg-3">To</span>
+    </div>
+    <div class="row">
+        <span class="col-lg-3">
+            <select class="form-control" name="sort" id="sort" ng-model="sortModel.sort">
+                <option value="driver">Driver</option>
+                <option value="date">Date</option>
+                <option value="seats">Number of seats</option>
+            </select>
+        </span>
+        <span class="col-lg-3">
+            <select class="form-control col-lg-3 " name="order" id="order" ng-model="sortModel.order">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </span>
+        <span class="col-lg-3">
+            <select class="form-control col-lg-3 " name="from" id="from" ng-model="sortModel.from">
+                <option value="{{city}}" ng-repeat="city in allCities">{{city}}</option>
+            </select>
+        </span>
+        <span class="col-lg-3">
+            <select class="form-control col-lg-3 "  name="to" id="to" ng-model="sortModel.to">
+                <option value="{{city}}" ng-repeat="city in allCities">{{city}}</option>
+            </select>
+        </span>
+    </div>
+    <br/>
+    <div class="row">
+        <span class="col-lg-4">
+            <input type="checkbox" name="results" value="includeFinished" ng-model="sortModel.includeFinished">Include Finished<br>
+            <input type="checkbox" name="results" value="onlyMine" ng-model="sortModel.onlyMine">Only Mine
+        </span>
+        <span class="col-lg-4">
+            <button class="btn btn-default center-block" ng-click="getFiltersResult(sortModel)">Filter</button>
+        </span>
+        <span class="col-lg-4">
+            <ul class="pager pull-right">
+                <li ><button ng-click="decreasePage()" class="btn btn-default"> << </button></li>
+                <input type="text" class="input-sm"  ng-model="sortModel.page" />
+                <li ><button ng-click="increasePage()"  class="btn btn-default"> >> </button></li>
+            </ul>
+        </span>
+    </div>

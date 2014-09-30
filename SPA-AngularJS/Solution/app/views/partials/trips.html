@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="text-center">
+        Trips
+    </h1>
+
+    <ng-include src="publicTrips" ng-if="!isAuth" class="text-center"></ng-include>
+
+    <ng-include src="tripsFilters" ng-if="isAuth"></ng-include>
+    <ng-include src="privateTrips" ng-if="isAuth" ng-hide="resultCount==0" class="text-center"></ng-include>
+
+    <div class="jumbotron text-center" ng-show="resultCount==0">
+        <h2 >No results</h2></h2>
+    </div>
+
+</div>

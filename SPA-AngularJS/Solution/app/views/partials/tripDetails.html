@@ -1,0 +1,27 @@
+<div class="container text-center">
+
+    <h1>{{trip.driverName}} - {{trip.departureDate}}</h1>
+    <br/>
+    <div class="row">
+        <button ng-click="joinTrip()" class=" bnt btn-success btn-sm">Join trip</button>
+    </div>
+
+    <br/><br/>
+
+    <div class="row">
+        <span class="col-lg-4">From: {{trip.from}}</span>
+        <span class="col-lg-4">To: {{trip.to}}</span>
+        <span class="col-lg-4">Free seats: {{trip.numberOfFreeSeats}}</span>
+    </div>
+
+    <br/><br/>
+
+    <div class="row">
+        <p>
+            Passengers:
+            <span ng-repeat="passenger in trip.passengers">
+                {{passenger}}{{$last ? '' : ', '}}
+            </span>
+        </p>
+    </div>
+</div>

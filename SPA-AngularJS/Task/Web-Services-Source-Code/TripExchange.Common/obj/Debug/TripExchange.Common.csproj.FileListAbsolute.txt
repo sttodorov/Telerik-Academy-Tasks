@@ -1,0 +1,5 @@
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Common\bin\Debug\TripExchange.Common.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Common\bin\Debug\TripExchange.Common.pdb
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Common\obj\Debug\TripExchange.Common.csprojResolveAssemblyReference.cache
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Common\obj\Debug\TripExchange.Common.dll
+E:\Telerik\09. SPA - AngularJS\EXAM\EXAM taks\Web-Services-Source-Code\TripExchange.Common\obj\Debug\TripExchange.Common.pdb

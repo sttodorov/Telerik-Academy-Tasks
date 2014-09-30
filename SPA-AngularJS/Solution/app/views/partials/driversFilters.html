@@ -1,0 +1,16 @@
+<div class="row">
+    <span class="col-lg-4">
+        <label for="searchedUsername" class="pull-left" id="usernameLabel" >Search: </label>
+        <input type="text" class="input-sm pull-left"  id="searchedUsername" ng-model="searchedUsername" />
+    </span>
+    <span class="col-lg-4">
+        <button class="btn btn-default" ng-click="getUsersByName(searchedUsername)">Filter</button>
+    </span>
+    <span class="col-lg-4">
+        <ul class="pager pull-right">
+            <li ><button ng-click="decreasePage()" class="btn btn-default"> << </button></li>
+            <input type="text" class="input-sm"  ng-model="page" />
+            <li ><button ng-click="increasePage()"  class="btn btn-default"> >> </button></li>
+        </ul>
+    </span>
+</div>

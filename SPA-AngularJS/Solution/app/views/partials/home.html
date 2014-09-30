@@ -1,0 +1,41 @@
+<div class="container text-center">
+    <div class="jumbotron ">
+        <h1>Welcome to trip exchange</h1>
+        <h2>Find yoour way home!</h2>
+    </div>
+
+    <table class="table table-hover ">
+        <thead>
+            <tr>
+                <th class="text-center">Trips</th>
+                <th class="text-center">Finished trips</th>
+                <th class="text-center">Users</th>
+                <th class="text-center">Drivers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{statistic.trips}}</td>
+                <td>{{statistic.finishedTrips}}</td>
+                <td>{{statistic.users}}</td>
+                <td>{{statistic.drivers}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="panel panel-default inline-panel pull-left">
+        <div class="panel-heading">
+            Latest trips
+        </div>
+        <div class="panel-body" ng-include="publicTrips">
+        </div>
+    </div>
+
+    <div class="panel panel-default inline-panel pull-right">
+        <div class="panel-heading">
+            Latest drivers
+        </div>
+        <div class="panel-body" ng-include="publicDrivers">
+        </div>
+    </div>
+</div>
