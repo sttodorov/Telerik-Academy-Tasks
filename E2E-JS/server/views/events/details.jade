@@ -1,0 +1,45 @@
+extends ../shared/layout
+block main-content
+    h1 #{event.title}
+    h3 #{event.eventDate} - #{event.selectedInitiative}
+
+    h3 Category - #{event.category}
+    br
+
+    h3 Documentation
+    br
+    p #{event.documetation}
+
+    h3 Location
+    br
+    span Lat: #{event.location.latitude} Lon: #{event.location.longitude}
+    br
+
+    h3 Creator
+    br
+    span Name:  #{event.creatorName}
+    br
+    span Phone: #{event.creatorPhone}
+    br
+
+    h3 People
+    bt
+    ul
+        each person in event.people
+            li #{person}
+
+    h3 Comments
+    ul
+        each comment in event.comments
+            li #{comment.author} - #{comment.text}
+    br
+    br
+    if(isPartOfTheEvent)
+        form(method="post")
+            input(id ="comment" type="text" class="form-control" name="comment" placeholder="Write your commnet")
+            input(type="submit" class="btn btn-lg btn-success" value="Send")
+
+
+
+
+

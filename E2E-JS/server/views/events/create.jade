@@ -1,0 +1,39 @@
+extends ../shared/layout
+block main-content
+    form#createEventForm(method="post")
+        label(for="title") Title
+        input(id="title" class="form-control" type="text" name="title" placeholder="Title" required="required")
+        br
+        label(for="documetation") Documentation
+        input(id="documetation" class="form-control" type="textarea" name="documetation" placeholder="Documentation" required="required")
+        br
+        label(for="category") Category
+        input(id="category" class="form-control" type="text" name="category" placeholder="Category" )
+        br
+        label(for="location") Location - Match regex
+        input(id="latitude" class="form-control" type="text" name="latitude" placeholder="Latitude" )
+        input(id="longitude" class="form-control" type="text" name="longitude" placeholder="Longitude" )
+        br
+        label(for="eventDate") Date
+        input(id="eventDate" class="form-control" type="date" name="eventDate")
+        br
+        label(for="typePublic") Type
+        br
+        span Public
+        input(id="typePublic" class="form-control" type="radio" name="eventType" value ='0')
+        span Initiative Only
+        input(id="typeInitiative" class="form-control" type="radio" name="eventType" value ='1')
+        #initiativeEvent.hidden
+            select.form-control(name = "selectedInitiative")
+                each init in initiatives
+                    option(value="#{init.initiative}") #{init.initiative}
+        span Initiative Season Only
+        input(id="typeSeason" class="form-control" type="radio" name="eventType" value ='2')
+        #seasonEvent.hidden
+            select.form-control(name = "selectedInitiative")
+                each init in initiatives
+                    option(value="#{init.initiative}#{init.year}") #{init.initiative} - #{init.year}
+        br
+        input(type="submit" class="btn btn-lg btn-primary" value="Create")
+block page-scripts
+    script(src="js/createEvent.js")

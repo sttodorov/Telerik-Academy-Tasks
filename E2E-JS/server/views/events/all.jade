@@ -1,0 +1,14 @@
+extends ../shared/layout
+block main-content
+    h1 Upcomming Events
+    ul
+        each event in events
+            li
+                a(href="events/#{event['_id']}") #{event.title} - #{event.eventDate}
+
+                form(method="post")
+                    input(type="hidden" name ="eventId" value="#{event['_id']}" )
+                    if(!event.isInTheEvent)
+                        input(type="submit" value="Join" name="Button" class="btn btn-success")
+                    if(event.isInTheEvent)
+                        input(type="submit" value="Leave" name="Button" class="btn btn-warning")

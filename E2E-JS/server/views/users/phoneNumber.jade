@@ -1,0 +1,8 @@
+extends ../shared/layout
+block main-content
+    form(method="post")
+
+        label(for="new-password") New phone number
+        input(id="new-password" class="form-control" type="text" name="phone" placeholder="New Password" required="required")
+        br
+        input(type="submit" class="btn btn-lg btn-primary" value="Change Phone" name="btnChancge")

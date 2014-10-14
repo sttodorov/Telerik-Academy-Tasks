@@ -1,0 +1,7 @@
+extends ../shared/layout
+block main-content
+    form(method="post")
+        label(for="new-link") New social Link
+        input(id="new-link" class="form-control" type="text" name="link" placeholder="New Link" required="required")
+        br
+        input(type="submit" class="btn btn-lg btn-primary" value="Add link" name="btnChancge")

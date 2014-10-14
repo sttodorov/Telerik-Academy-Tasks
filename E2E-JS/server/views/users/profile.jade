@@ -1,0 +1,44 @@
+extends ../shared/layout
+block main-content
+    h1 #{currentUser.firstName} #{currentUser.lastName}
+    hr
+
+    div.navbar-collapse.collapse.navbar-responsive-collapse
+        ul.nav.navbar-nav
+            li.editUserButtion
+                a.btn.btn-primary(href="/password") Change password
+            li.editUserButtion
+                a.btn.btn-primary(href="/phoneNumber") Change phone
+            li.editUserButtion
+                a.btn.btn-primary(href="/socialLink") Add social link
+            li.editUserButtion
+                a.btn.btn-success(href="/avatar") Change avatar
+
+    .col-lg-2.pull-right
+        h3 Avatar
+        a.btn(href="/avatar")
+            img(src="/img/" + "#{currentUser.avatar}" width="100%" alt="Avatar")
+    br
+    ul
+        li Username: #{currentUser.username}
+        li Email: #{currentUser.emailAddress}
+        li Phone number: #{currentUser.phoneNumber}
+        li Points
+            ul
+                li Venue: #{currentUser.venuePoints}
+                li Organization: #{currentUser.organizationPoints}
+        li Initiatives
+            ul
+                each initiative in currentUser.telerikAcademyInitiatives
+                    li #{initiative.initiative} - #{initiative.year}
+        li Social Links
+            ul
+                each link in currentUser.socialLinks
+                    li
+                        a(href="#{link}") #{link}
+
+
+    span Event created by #{currentUser.username}
+    ul
+        each event in eventsByCuurentUser
+            li #{event.title}

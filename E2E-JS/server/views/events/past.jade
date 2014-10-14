@@ -1,0 +1,7 @@
+extends ../shared/layout
+block main-content
+    h1 Past Events
+    ul
+        each event in events
+            li
+                a(href="events/#{event['_id']}") #{event.title} - #{event.eventDate}
