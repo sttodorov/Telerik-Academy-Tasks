@@ -10,6 +10,9 @@ node_modules
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+bin
+obj
+packages
 # Windows Installer files
 *.cab
 *.msi
